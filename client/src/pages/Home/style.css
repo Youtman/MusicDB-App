@@ -1,0 +1,51 @@
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heroSection {
+  height: 100vh;
+  background: url('../../img/hero-img.jpg') center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroText {
+  text-align: center;
+  color: #fff;
+}
+
+.heroText h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.heroText button {
+  color: #fff;
+  background: transparent;
+  border: solid 2px #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.heroText button:hover {
+  cursor: pointer;
+  background: #fff;
+  border: solid 2px #fff;
+  color: #333;
+}
+
+button.start {
+  background: rgb(0, 206, 93);
+  border: solid 2px rgb(0, 206, 93);
+}
+
+button.start:hover {
+  color: #fff;
+  background: rgb(1, 168, 76);
+  border: solid 2px rgb(1, 168, 76);
+}

@@ -1,0 +1,59 @@
+/* .card {
+  width: 18em;
+} */
+
+.popular {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.card_ {
+  background-origin: center;
+  background-size: cover;
+}
+
+.holder {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  position: relative;
+  align-items: baseline;
+  background-image: linear-gradient(
+    rgba(247, 203, 203, 0.041),
+    rgba(2, 2, 2, 0.795)
+  );
+}
+
+.holder p {
+  position: absolute;
+  bottom: 30px;
+  width: 50%;
+  font-weight: bold;
+  left: 20px;
+}
+
+.hidden {
+  margin-bottom: -100px;
+}
+
+.show {
+}
+/* 
+.meta {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.212);
+  position: absolute;
+  z-index: 3;
+} */
+
+.title {
+  font-size: 18px;
+  color: aliceblue;
+}
