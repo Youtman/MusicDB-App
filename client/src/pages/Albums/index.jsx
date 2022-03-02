@@ -2,13 +2,13 @@ import { React, useEffect, useState } from 'react';
 import './style.css';
 import axios from '../../services/Api';
 
-export default function Music() {
-  const [genres, setgenres] = useState([]);
+export default function Albums() {
+  const [albums, setAlbums] = useState([]);
   useEffect(() => {
     axios
-      .get('/genre')
+      .get('/album')
       .then((res) => {
-        setgenres(res.data);
+        setAlbums(res.data);
         console.log(res.data);
       })
       .catch((err) => console.log(err));
@@ -17,12 +17,12 @@ export default function Music() {
   return (
     <div className='container mt-4'>
       <div className='result'>
-        {genres.map((genre, i) => {
+        {albums.map((album, i) => {
           return (
-            <div className='genre' key={i}>
-              <img src={genre.picture_big} alt='album art' />
+            <div className='album' key={i}>
+              <img src={album.album.cover_xl} alt='album cover' />
               <div>
-                <h5>{genre.name}</h5>
+                <h5>{album.album.title}</h5>
               </div>
             </div>
           );

@@ -3,9 +3,11 @@ button {
 }
 
 .heroSection {
+  margin-top: -80px;
   height: 100vh;
-  background: url('../../img/hero-img.jpg') center;
+  background: url('../../img/hero.png') center;
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +15,7 @@ button {
 
 .heroText {
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
 .heroText h1 {
@@ -40,12 +42,21 @@ button {
 }
 
 button.start {
-  background: rgb(0, 206, 93);
-  border: solid 2px rgb(0, 206, 93);
+  background: #1bb4d4;
+  border: solid 2px #1bb4d4;
 }
 
 button.start:hover {
   color: #fff;
-  background: rgb(1, 168, 76);
-  border: solid 2px rgb(1, 168, 76);
+  background: #007fba;
+  border: solid 2px #007fba;
+}
+
+.start > a {
+  color: #fff;
+  text-decoration: none;
+}
+.start > a:hover {
+  color: #fff;
+  text-decoration: none;
 }

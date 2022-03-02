@@ -10,7 +10,7 @@
   margin: 0px -15px;
 }
 
-.result .genre {
+.result .album {
   width: 33.333%;
   min-width: 250px;
   padding: 15px;
@@ -18,13 +18,13 @@
   flex-direction: column;
 }
 
-.result .genre img {
+.result .album img {
   display: block;
   width: 100%;
 }
 
-.result .genre h5 {
-  color: #f00946;
+.result .album h5 {
+  color: #000;
   font-size: 20px;
   font-weight: 600;
   padding: 10px;

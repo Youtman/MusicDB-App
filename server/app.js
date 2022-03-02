@@ -1,13 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-// const proxy = require('node-global-proxy').default;
-
-// proxy.setConfig({
-//   http: 'http://localhost:5000',
-//   https: 'https://localhost:5000',
-// });
-// proxy.start();
 
 require('dotenv').config();
 const port = 5000;
